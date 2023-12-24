@@ -1,7 +1,7 @@
 - name: checking data types
   hosts: localhost
   vars:
-    NAME: Mohana
+    NAME: Siva
     Skills: 
     - Devops
     - Shell
