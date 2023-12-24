@@ -1,3 +1,4 @@
+#!/bin/bash
 - name: install and run nginx
   hosts: web
   tasks:
@@ -9,4 +10,3 @@
     ansible.builtin.service:
       name:nginx
       state: start
-      
