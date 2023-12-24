@@ -1,0 +1,22 @@
+- name: variables from where 
+  hosts: localhost
+  vats_files:
+  - variable.yaml
+  vars_prompt:
+  - name: PERSON
+    prompt: please enter your name
+    private: false
+  - name: WISHES
+    prompt: please enter your wishes
+    private: false
+  vars:
+    PERSON: "Shivakumar from play"
+    WISHES: "Morning from play"
+  tasks:
+  - name: check variables
+    vars:
+      PERSON: "SIVAKUMAR FROM Task"
+      WISHES: "Morning from Task"
+    ansible.builtin.debug:
+      msg: "Hello {{PERSON}}, Good {{WISHES}}"
+      
