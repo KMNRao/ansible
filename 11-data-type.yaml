@@ -17,9 +17,14 @@
    - name: print key value pair
      ansible.builtin.debug:
       msg: "name: {{NAME}}"
+  
+   - name: print list
+      ansible.builtin.debug:
+        msg: "skills: {{skills}}"
    - name: print map
     ansible.builtin.debug:
-      mag: "Skills: {{Skills}}"
+      mag: "Experience: {{Experience}}"
+ 
   - name: print boolean
     ansible.builtin.debug:
       msg: "TRAINER: {{TRAINER}}"

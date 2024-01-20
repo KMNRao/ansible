@@ -1,6 +1,6 @@
 - name: variables from where 
   hosts: localhost
-  vats_files:
+  vars_files:
   - variable.yaml
   vars_prompt:
   - name: PERSON
