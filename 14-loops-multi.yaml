@@ -1,0 +1,13 @@
+- name: loops
+  hosts: localhost
+  become: yes
+  tsaks:
+  - name: print package
+    ansible.builtin.debug:
+      msg: "{{item}}"
+      state: present
+    loop:
+     - mysql
+     - git
+     - postfix
+     
